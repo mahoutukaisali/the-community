@@ -19,6 +19,12 @@ const Header = ({ currentUser }) => (
           :
           <Link className="option" to="/signin">SIGN IN</Link>
         }
+        {
+          currentUser ?
+          <Link className="option" to="/lobby">Go Lobby</Link>
+          :
+          console.log()
+        }
           </div>
     </div>
 )

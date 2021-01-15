@@ -5,6 +5,7 @@ import TopPage from './pages/toppage/toppage.component';
 import Header from './components/header/header.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { auth, createUserProfileDocument } from './components/firebase/firebase.utils';
+import LobbyPage from './pages/lobby/lobby.component';
 
 class App extends React.Component {
   constructor() {
@@ -49,6 +50,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={TopPage} />
           <Route path='/signin' component={SignInAndSignUpPage} />
+          <Route path='/lobby' component={LobbyPage} />
         </Switch>
       </div>
     );
